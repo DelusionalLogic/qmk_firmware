@@ -17,73 +17,73 @@ enum alt_keycodes {
 #define COL_MDA 0x01EEAE44 // Media keys
 #define COL_TRN KC_TRNS
 
-const uint32_t PROGMEM colmap[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT(
-        COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_MOD, COL_MOD, \
-        COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_MOD, COL_MOD, \
-        COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED,          COL_MOD, COL_MOD, \
-        COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_MOD,          COL_RED, COL_MOD, \
-        COL_MOD, COL_MOD, COL_MOD,                            COL_MOD,                            COL_MOD, COL_MOD, COL_RED, COL_RED, COL_RED  \
-    ),
-    [1] = LAYOUT(
-        KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \
-    ),
-    [2] = LAYOUT(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, \
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS,          KC_TRNS, KC_TRNS, \
-        KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \
-    ),
-    [3] = LAYOUT(
-        KC_NO,   COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, \
-        COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, \
-        COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_ALT, COL_ALT, COL_ALT, COL_ALT, COL_TRN, COL_TRN,          COL_TRN, COL_MDA, \
-        COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN,          COL_MDA, COL_MDA, \
-        COL_TRN, COL_TRN, COL_TRN,                            COL_TRN,                            COL_TRN, COL_TRN, COL_MDA, COL_MDA, COL_MDA  \
-    ),
-};
+/* const uint32_t PROGMEM colmap[][MATRIX_ROWS][MATRIX_COLS] = { */
+/*     [0] = LAYOUT( */
+/*         COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_NUM, COL_MOD, COL_MOD, \ */
+/*         COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_MOD, COL_MOD, \ */
+/*         COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED,          COL_MOD, COL_MOD, \ */
+/*         COL_MOD, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_RED, COL_MOD,          COL_RED, COL_MOD, \ */
+/*         COL_MOD, COL_MOD, COL_MOD,                            COL_MOD,                            COL_MOD, COL_MOD, COL_RED, COL_RED, COL_RED  \ */
+/*     ), */
+/*     [1] = LAYOUT( */
+/*         KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \ */
+/*     ), */
+/*     [2] = LAYOUT( */
+/*         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, \ */
+/*         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS,          KC_TRNS, KC_TRNS, \ */
+/*         KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \ */
+/*     ), */
+/*     [3] = LAYOUT( */
+/*         KC_NO,   COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, \ */
+/*         COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, \ */
+/*         COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_ALT, COL_ALT, COL_ALT, COL_ALT, COL_TRN, COL_TRN,          COL_TRN, COL_MDA, \ */
+/*         COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN, COL_TRN,          COL_MDA, COL_MDA, \ */
+/*         COL_TRN, COL_TRN, COL_TRN,                            COL_TRN,                            COL_TRN, COL_TRN, COL_MDA, COL_MDA, COL_MDA  \ */
+/*     ), */
+/* }; */
 
-extern layer_state_t default_layer_state;
-#define color_layers 0b00000000000000000000000000011111
-layer_state_t layer_state_set_user(layer_state_t state) {
-    layer_state_t colayers = (state | default_layer_state) & color_layers;
+/* extern layer_state_t default_layer_state; */
+/* #define color_layers 0b00000000000000000000000000011111 */
+/* layer_state_t layer_state_set_user(layer_state_t state) { */
+/*     layer_state_t colayers = (state | default_layer_state) & color_layers; */
 
-    uint8_t led[4]; // Maximum 4 leds per button
-    uint8_t led_count = 0;
+/*     uint8_t led[4]; // Maximum 4 leds per button */
+/*     uint8_t led_count = 0; */
 
-    for(uint8_t y = 0; y < MATRIX_ROWS; y++) {
-        for(uint8_t x = 0; x < MATRIX_COLS; x++) {
-            uint32_t colVal = 0; 
-            for (int8_t i = sizeof(layer_state_t) * 8 - 1; i >= 0; i--) {
-                // Layer 0 is always enabled.
-                if (i == 0 || colayers & (1UL << i)) {
-                    colVal = colmap[i][y][x];
-                    if(colVal != KC_TRNS)
-                        break;
-                }
-            }
-            if(colVal == KC_NO) {
-                // It's already black
-            } else if((colVal & 0xFF000000) == 0) {
-                continue;
-            }
+/*     for(uint8_t y = 0; y < MATRIX_ROWS; y++) { */
+/*         for(uint8_t x = 0; x < MATRIX_COLS; x++) { */
+/*             uint32_t colVal = 0; */ 
+/*             for (int8_t i = sizeof(layer_state_t) * 8 - 1; i >= 0; i--) { */
+/*                 // Layer 0 is always enabled. */
+/*                 if (i == 0 || colayers & (1UL << i)) { */
+/*                     colVal = colmap[i][y][x]; */
+/*                     if(colVal != KC_TRNS) */
+/*                         break; */
+/*                 } */
+/*             } */
+/*             if(colVal == KC_NO) { */
+/*                 // It's already black */
+/*             } else if((colVal & 0xFF000000) == 0) { */
+/*                 continue; */
+/*             } */
 
-            uint8_t r = (colVal >> 16) & 0xFF;
-            uint8_t g = (colVal >>  8) & 0xFF;
-            uint8_t b = (colVal >>  0) & 0xFF;
-            led_count = rgb_matrix_map_row_column_to_led(y, x, led);
-            for(uint8_t i = 0; i < led_count; i++) {
-                rgb_matrix_set_color(led[i], r, g, b);
-            }
-        }
-    }
-    return state;
-}
+/*             uint8_t r = (colVal >> 16) & 0xFF; */
+/*             uint8_t g = (colVal >>  8) & 0xFF; */
+/*             uint8_t b = (colVal >>  0) & 0xFF; */
+/*             led_count = rgb_matrix_map_row_column_to_led(y, x, led); */
+/*             for(uint8_t i = 0; i < led_count; i++) { */
+/*                 rgb_matrix_set_color(led[i], r, g, b); */
+/*             } */
+/*         } */
+/*     } */
+/*     return state; */
+/* } */
 
 #define TG_NKRO MAGIC_TOGGLE_NKRO //Toggle 6KRO / NKRO mode
 
@@ -216,5 +216,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void keyboard_post_init_user() {
-    rgblight_mode(RGB_MATRIX_CUSTOM_my_cool_effect);
+    /* rgblight_mode(RGB_MATRIX_CUSTOM_my_cool_effect); */
+    rgblight_mode(RGB_MATRIX_SOLID_MULTISPLASH);
+    /* rgblight_mode(RGB_MATRIX_SOLID_COLOR); */
+    rgblight_sethsv(0, 0, 200);
+    rgblight_set_speed(75);
 }
