@@ -20,23 +20,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
              MO(1),
     KC_MEDIA_PREV_TRACK,   KC_MEDIA_PLAY_PAUSE,   KC_MEDIA_NEXT_TRACK,
-    KC_F9,   KC_F7,   KC_F8
+    MO(1),   KC_F7,   KC_F8
   ),
   [1] = LAYOUT(
              _______,
-    RGB_MOD, KC_UP,   RESET,
-    KC_LEFT, KC_DOWN, KC_RGHT
+    RGB_MOD, KC_UP,   QK_BOOT,
+    _______, KC_DOWN, KC_RGHT
   ),
 };
 
 // Volume up/down on the encoder
 bool encoder_update_user(uint8_t index, bool clockwise) {
-  if (clockwise) {
-    tap_code_delay(KC_VOLU, 10);
-  }
-  else {
-    tap_code_delay(KC_VOLD, 10);
-  }
+	switch(get_highest_layer(layer_state|default_layer_state)) {
+		case 0:
+			if (clockwise) {
+				tap_code_delay(KC_VOLU, 10);
+			}
+			else {
+				tap_code_delay(KC_VOLD, 10);
+			}
+			break;
+		case 1:
+			if (clockwise) {
+				tap_code_delay(KC_MFFD, 10);
+			}
+			else {
+				tap_code_delay(KC_MRWD, 10);
+			}
+			break;
+	}
 
   return true;
 }
